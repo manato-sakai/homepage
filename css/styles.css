@@ -11103,49 +11103,42 @@ tr:hover {
   transition: background-color 0.3s ease;
 }
 
-
-
+/* index list */
 .index {
   list-style-type: none; /* ・のマーカーを消す */
-  padding-left: 0;       /* 左の余白も消す（任意） */
+  padding-left: 0;       /* 左の余白も消す */
 }
 
 .index li {
-  position: relative;        /* アイコン用に相対位置指定 */
-  padding-left: 30px;        /* アイコンの分だけ左余白 */
+  position: relative;
+  padding-left: 30px;
   margin-bottom: 15px;
-  background: #f8f9fa;       /* 薄いグレー背景 */
+  background: #f8f9fa;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .index li::before {
-  content: "✔";              /* アイコン（ここはチェックマーク） */
+  content: "✔";
   position: absolute;
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  color: #00bfff;           
+  color: #00bfff;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-
-
-
-/* ul or li */
-
-
+/* nav items */
 .nav-item {
-  /* display: block; /* Bootstrapでは通常inline-blockやflexになるので無理に変えない */
   padding: 5px 10px;
   font-size: 1.1em;
   color: white;
   background-color: #555;
   border-radius: 4px;
   transition: all 0.3s ease;
-  margin-left: 8px; /* navアイテム同士の間隔 */
+  margin-left: 8px;
 }
 
 .nav-item:hover {
@@ -11153,13 +11146,11 @@ tr:hover {
   color: black;
 }
 
-
-
 .nav-item::before {
   content: none;
 }
 
-
+/* index-home */
 .index-home {
     list-style: none;
     padding: 0;
@@ -11169,10 +11160,10 @@ tr:hover {
 
 .index-home li {
     position: relative;
-    display: block; /* 縦並び */
-    max-width: 500px; /* 中央寄せ用の幅制限（お好みで） */
-    margin: 0 auto 15px auto; /* 中央寄せ＆下余白 */
-    padding-left: 30px; /* チェック分のスペース */
+    display: block;
+    max-width: 500px;
+    margin: 0 auto 15px auto;
+    padding-left: 30px;
     background: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -11190,7 +11181,7 @@ tr:hover {
     font-size: 1.2rem;
 }
 
-
+/* page-home and others */
 .page-home {
   font-size: 1.2rem;  
 }
@@ -11199,16 +11190,52 @@ tr:hover {
   font-size: 1.2em;
 }
 
-
-
 .index-int {
     font-size: 1.5rem;
 }
-
 
 .span-int {
     font-size: 1.2rem;
 }
 
+/* ===== スマホ用調整（横幅600px以下） ===== */
+@media (max-width: 600px) {
+  table {
+    width: 100%; /* 横幅いっぱい */
+    font-size: 0.9rem;
+    margin: 20px auto;
+  }
 
+  th, td {
+    padding: 8px;
+  }
 
+  .index li,
+  .index-home li {
+    font-size: 1rem;
+    padding-left: 25px;
+    max-width: 100%;
+  }
+
+  .nav-item {
+    font-size: 1rem;
+    margin-left: 4px;
+    padding: 4px 8px;
+  }
+
+  .page-home {
+    font-size: 1rem;
+  }
+
+  .index-schedule {
+    font-size: 1rem;
+  }
+
+  .index-int {
+    font-size: 1.2rem;
+  }
+
+  .span-int {
+    font-size: 1rem;
+  }
+}
