@@ -11239,3 +11239,13 @@ tr:hover {
     font-size: 1rem;
   }
 }
+
+@media (max-width: 600px) {
+  /* 既存の調整に加えて */
+
+  .index li::before,
+  .index-home li::before {
+    font-size: 1rem;      /* 小さくする */
+    left: 5px;            /* 左寄せしてスペースを狭く */
+  }
+}
