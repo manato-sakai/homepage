@@ -11202,50 +11202,49 @@ tr:hover {
 @media (max-width: 600px) {
   table {
     width: 100%; /* 横幅いっぱい */
-    font-size: 0.9rem;
-    margin: 20px auto;
+    font-size: 0.8rem;   /* 少し小さめに */
+    margin: 15px auto;
   }
 
   th, td {
-    padding: 8px;
+    padding: 6px;
   }
 
   .index li,
   .index-home li {
-    font-size: 1rem;
-    padding-left: 25px;
+    font-size: 0.9rem;   /* 元の1rem → 少し小さく */
+    padding-left: 22px;
     max-width: 100%;
   }
 
   .nav-item {
-    font-size: 1rem;
-    margin-left: 4px;
-    padding: 4px 8px;
+    font-size: 0.9rem;   /* 小さめ */
+    margin-left: 3px;
+    padding: 3px 6px;
   }
 
   .page-home {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .index-schedule {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .index-int {
-    font-size: 1.2rem;
+    font-size: 1rem;     /* 元1.2rem → 小さく */
   }
 
   .span-int {
-    font-size: 1rem;
+    font-size: 0.9rem;   /* 元1rem → 少し小さく */
   }
 }
 
+/* リスト記号のサイズ・位置も微調整 */
 @media (max-width: 600px) {
-  /* 既存の調整に加えて */
-
   .index li::before,
   .index-home li::before {
-    font-size: 1rem;      /* 小さくする */
-    left: 5px;            /* 左寄せしてスペースを狭く */
+    font-size: 0.8rem;   /* 元1rem → 小さく */
+    left: 4px;           /* 左寄せを少し調整 */
   }
 }
